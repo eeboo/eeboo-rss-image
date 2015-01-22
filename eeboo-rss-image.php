@@ -25,10 +25,6 @@ function add_image_content($content) {
 	$imageUrl = pods_image_url ( get_post_custom_values('push_image'), $size = 'push', $default = 0, $attributes = '', $force = true );
 
  	$imagetag = "<img src='$imageUrl' ><br>";
-		
- 	//if (true === self::$options['force_excerpt']) $args['count'] = self::$options['excerpt_size'];
-		
- 	//$content = A5_Excerpt::text($args);
 			
  	return $imagetag.$content;
  }
